@@ -14,7 +14,7 @@ if (import.meta.main) {
 
 	const input = Deno.readTextFileSync(`./days/inputs/day${day}.txt`);
 
-	days[day - 1](input);
-	console.log("Solution: ", days[day - 1](input));
+	console.log("📝 Part 1 Solution: ", days[day - 1].part1(input));
+	console.log("📝 Part 2 Solution: ", days[day - 1].part2(input));
 	console.log("🎄 Done! 🎄");
 }
