@@ -1,6 +1,6 @@
-import { day1 } from "./days/day1.ts";
+import { day1, day2 } from "./days/index.ts";
 
-const days = [day1];
+const days = [day1, day2];
 
 if (import.meta.main) {
 	if (Deno.args.length === 0) {

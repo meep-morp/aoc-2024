@@ -1,3 +1,5 @@
+/** @see https://adventofcode.com/2024/day/1 */
+
 const part1 = (input: string): string => {
 	const regex = /(\d+)\s+(\d+)/;
 
@@ -66,9 +68,6 @@ const part2 = (input: string): string => {
 	Object.keys(count).forEach(key => {
 		similarities.push(parseInt(key) * count[parseInt(key)]);
 	});
-
-	console.log(count);
-
 	return similarities.reduce((acc, curr) => acc + curr, 0).toString();
 };
 
